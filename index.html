@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gangs</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                Gangs
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search Friends">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- ----------------- MAIN ------------------- -->
+    <main>
+        <div class="container">
+            <!-- Left side  -->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="handle">
+                        <h4>Wisdom Nuel</h4>
+                        <p class="text-muted">
+                            @wisdom
+                        </p>
+                    </div>
+                </a>
+
+                <!-- SIDEBAR -->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notifications</h3>
+                        <!-- notification popup -->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-2.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Bright Chukwuemeka</b> accepted your friend request 
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-6.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Bright Chuks</b> accepted your friend request 
+                                    <small class="text-muted"> 3 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-7.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Wizband Royal</b> Sent you a friend request 
+                                    <small class="text-muted">5 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-8.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Wizband Vessel</b> Invite you to join a group 
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-9.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Fame Chinenye</b> accepted your friend request 
+                                    <small class="text-muted">12 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-10.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Bright Grace</b> Sent you a friend request 
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-11.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Manch Divine</b> Posted on your timeline 
+                                    <small class="text-muted">15 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-12.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Grace Obidike</b> Is celebrating a birthday today 
+                                    <small class="text-muted">17 DAYS AGO</small>
+                                </div>
+                            </div><div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-13.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Bright Classic</b> Sent you a message  
+                                    <small class="text-muted">3 DAYS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                                                <!-- end of notification popup -->
+                    </a>
+                    <a class="menu-item" id="messages-notifications">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">8</small></i></span><h3>Messages</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-chart-line"></i></span><h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
+                    </a>
+                </div>
+                <!-- End of sidebar -->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+            <!-- end of left side  -->
+
+            <!-- Middle  -->
+            <div class="middle">
+               <!-- Stories -->
+               <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-1.jpg">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-11.jpg">
+                        </div>
+                        <p class="name">Wizband Vessel</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-12.jpg">
+                        </div>
+                        <p class="name">Bright Classic</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-13.jpg">
+                        </div>
+                        <p class="name">Wizband Royal</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-14.jpg">
+                        </div>
+                        <p class="name">Odii Ifeoma</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-15.jpg">
+                        </div>
+                        <p class="name">Amarachi Grace</p>
+                    </div>
+               </div>
+               <!-- End of stories -->
+
+               <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="What's on your mind Wisdom?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+               </form>
+
+               <!-- FEED PAGE -->
+               <div class="feeds">
+                <!-- FEED PAGE 1 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-13.jpg" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Kosi Kate</h3>
+                                    <small>Dubia, 15 MINUTES AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <span><img src="./images/profile-4.jpg" alt=""></span>
+                            <span><img src="./images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>Wizband Vessel</b> and <b>2,323 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Wizband Vessel</b> Wow this is amazing. <span class="harsh-tag">#happy</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <!-- END OF FEED PAGE 1 -->
+                     <!-- FEED PAGE 2 -->
+                     <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-14.jpg" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Wisdom Nuel</h3>
+                                    <small>Dubia, 2 MINUTES AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-2.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-11.jpg" alt=""></span>
+                            <span><img src="./images/profile-5.jpg" alt=""></span>
+                            <span><img src="./images/profile-16.jpg" alt=""></span>
+                            <p>Liked by <b>Odii Ifeoma</b> and <b>323 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Chukwuemeka Bright</b> You're awesome. <span class="harsh-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <!-- END OF FEED PAGE 2 -->
+                     <!-- FEED PAGE 3 -->
+                     <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-15.jpg" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Avery Lovey</h3>
+                                    <small>Posted, 4 HOURS AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-3.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-12.jpg" alt=""></span>
+                            <span><img src="./images/profile-6.jpg" alt=""></span>
+                            <span><img src="./images/profile-17.jpg" alt=""></span>
+                            <p>Liked by <b>Anita Wilson</b> and <b>2000 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Wizband Vessel</b> Awesome. <span class="harsh-tag">#gifts</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 2773 comments</div>
+                    </div>
+                    <!-- END OF FEED PAGE 3 -->
+                     <!-- FEED PAGE 4 -->
+                     <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-19.jpg" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Fave Des</h3>
+                                    <small>Honkong, 3 DAYS AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-4.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-18.jpg" alt=""></span>
+                            <span><img src="./images/profile-3.jpg" alt=""></span>
+                            <span><img src="./images/profile-12.jpg" alt=""></span>
+                            <p>Liked by <b>Jose Marvelous</b> and <b>5470 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Wiz King</b> Wow this is amazing. <span class="harsh-tag">#travel</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 3457 comments</div>
+                    </div>
+                    <!-- END OF FEED PAGE 4-->
+                     <!-- FEED PAGE 5 -->
+                     <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-13.jpg" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Kosi Blessing</h3>
+                                    <small>Field, 10 MINUTES AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-5.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-15.jpg" alt=""></span>
+                            <span><img src="./images/profile-8.jpg" alt=""></span>
+                            <span><img src="./images/profile-11.jpg" alt=""></span>
+                            <p>Liked by <b>Wizband Vessel</b> and <b>2,323 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Great Faith</b> Wow this is amazing. <span class="harsh-tag">#sport</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <!-- END OF FEED PAGE 5 -->
+                     <!-- FEED PAGE 6 -->
+                     <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-19.jpg" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Linda Kate</h3>
+                                    <small>London, 15 MINUTES AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-6.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-20.jpg" alt=""></span>
+                            <span><img src="./images/profile-19.jpg" alt=""></span>
+                            <span><img src="./images/profile-17.jpg" alt=""></span>
+                            <p>Liked by <b>Wizband Vessel</b> and <b>2,323 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Wizband Royal</b> Keep it up. <span class="harsh-tag">#songs</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 27 comments</div>
+                    </div>
+                    <!-- END OF FEED PAGE 6 -->
+                    <!-- FEED PAGE 7 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-16.jpg" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Francis Edwin</h3>
+                                    <small>Italy, 1 MINUTES AGO</small>
+                                </div>
+                                
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-7.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-17.jpg" alt=""></span>
+                            <span><img src="./images/profile-12.jpg" alt=""></span>
+                            <span><img src="./images/profile-3.jpg" alt=""></span>
+                            <p>Liked by <b>Divine Favour</b> and <b>2,323 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Mary Jane</b> Wow. <span class="harsh-tag">#work</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 17k comments</div>
+                    </div>
+                    <!-- END OF FEED PAGE 7 -->
+               </div>
+               <!-- END OF FEEDS -->
+            </div>
+            <!-- End of middle  -->
+            
+            <!-- RIGHT -->
+            <div class="right">
+               <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4><i class="uil uil-edit"></i>
+                    </div>
+                    <!-- SEARCH BAR -->
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search messages" id="message-search">
+                    </div>
+
+                    <!-- MESSAGE CATEGORY -->
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Request(7)</h6>
+                    </div>
+                    <!-- MESSAGE -->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-17.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Avery Lovey</h5>
+                            <p class="text-muted">Hey bro hw are u doing</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Lucas Vic</h5>
+                            <p class="text-muted">2 new messages</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-5.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Akin Muyintolu</h5>
+                            <p class="text-muted">Its nice meeting u</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-18.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Wizband Royal</h5>
+                            <p class="text-muted">Hey u just forget me na </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-6.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Fave Des</h5>
+                            <p class="text-muted">Keep it up broh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-19.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Bright Chukwuemeka</h5>
+                            <p class="text-muted">🤣🤣🤣🤣🤣</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-13.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Odii Ifeoma</h5>
+                            <p class="text-muted">I will break your head oooo 🤔🤔🤔</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-10.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Kosi Kate</h5>
+                            <p class="text-muted">5 new messages</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-6.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Bright Classic</h5>
+                            <p class="text-muted">Make i no go catch u ooooo</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-12.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Amarachi Grace</h5>
+                            <p class="text-muted">Lol 🤣🤣🤣🤣🤣</p>
+                        </div>
+                    </div>
+               </div>
+               <!-- END OF MESSAGES -->
+
+               <!-- FRIENDS REQUESTS -->
+               <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-12.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Okoh David</h5>
+                                <p class="text-muted">
+                                    8 mutual firends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-14.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Okoh Franklin</h5>
+                                <p class="text-muted">
+                                    8 mutual firends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-2.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Ken Kosi</h5>
+                                <p class="text-muted">
+                                    8 mutual firends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Delete</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-16.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Ugo James</h5>
+                                <p class="text-muted">
+                                    8 mutual firends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Delete</button>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <!-- END OF RIGHT -->
+        </div>
+    </main>
+
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text-muted">Manage your font size, color, and background.</p>
+
+            <!-- FONT SIZES --> 
+            <div class="font-size">
+                <h4>Font Size</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2 active"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <!-- PRIMARY COLORS -->
+            <div class="color">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <!-- BACKGROUND COLOR -->
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5>Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Lights Out</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCRIPT JS -->
+    <script src="./index.js"></script>
+</body>
+</html>
